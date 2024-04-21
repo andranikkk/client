@@ -1,5 +1,5 @@
-// import { User } from "@prisma/client";
 import { api } from "./api";
+// import { User } from "@prisma/client";
 type User = {
   id: string;
   email: string;

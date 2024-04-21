@@ -4,11 +4,19 @@ import { Link, useNavigate } from "react-router-dom";
 // import { selectUser } from "../../features/auth/authSlice";
 import { useRegisterMutation } from "../../app/services/auth";
 import { Card, Form, Row, Space, Typography } from "antd";
-import { User } from "@prisma/client";
+// import { User } from "@prisma/client";
 import CustomInput from "../../components/custom-input";
 import { Paths } from "../../app/paths";
 import PasswordInput from "../../components/password-input/input";
-import CustomButton from "../../components/custom-button";
+import CustomButton from "../../components/custom-button";// import { User } from "@prisma/client";
+type User = {
+  id: string;
+  email: string;
+  password: string;
+  name: string;
+  isBlocked: boolean;
+  createdAt: Date;
+};
 
 type RegisterData = Omit<User, "id"> & { confirmPassword: string };
 

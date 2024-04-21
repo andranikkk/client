@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import { MainLayout } from "../../components/mainLayout";
 import { Table, Checkbox, Button, message } from "antd";
 import type { ColumnsType } from "antd/es/table";
-import { User } from "@prisma/client";
+// import { User } from "@prisma/client";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../features/auth/authSlice";
+// import { User } from "@prisma/client";
 import {
   useBlockUserMutation,
   useGetAllUsersQuery,
@@ -14,6 +15,14 @@ import {
 } from "../../app/services/users";
 import { CheckboxChangeEvent } from "antd/es/checkbox";
 import { format } from "date-fns";
+type User = {
+  id: string;
+  email: string;
+  password: string;
+  name: string;
+  isBlocked: boolean;
+  createdAt: Date;
+};
 
 const HomePage = () => {
   const navigate = useNavigate();
