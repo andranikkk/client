@@ -6,6 +6,7 @@
     "node": "20.x"
   },
   "dependencies": {
+    "@prisma/client": "^5.12.1",
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
