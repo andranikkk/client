@@ -8,7 +8,7 @@ import { User } from "@prisma/client";
 import CustomInput from "../../components/custom-input";
 import { Paths } from "../../app/paths";
 import PasswordInput from "../../components/password-input/input";
-import CustomButton from "../../components/custom-button";// import { User } from "@prisma/client";
+import CustomButton from "../../components/custom-button";
 // type User = {
 //   id: string;
 //   email: string;
