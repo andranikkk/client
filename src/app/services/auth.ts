@@ -1,13 +1,13 @@
 import { api } from "./api";
-import { User } from "@prisma/client";
-// type User = {
-//   id: string;
-//   email: string;
-//   password: string;
-//   name: string;
-//   isBlocked: boolean;
-//   createdAt: Date;
-// };
+// import { User } from "@prisma/client";
+type User = {
+  id: string;
+  email: string;
+  password: string;
+  name: string;
+  isBlocked: boolean;
+  createdAt: Date;
+};
 
 export type UserData = Omit<User, "id">;
 

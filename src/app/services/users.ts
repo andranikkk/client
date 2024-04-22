@@ -1,13 +1,13 @@
-import { User } from "@prisma/client";
+// import { User } from "@prisma/client";
 import { api } from "./api";
-// type User = {
-//   id: string;
-//   email: string;
-//   password: string;
-//   name: string;
-//   isBlocked: boolean;
-//   createdAt: Date;
-// };
+type User = {
+  id: string;
+  email: string;
+  password: string;
+  name: string;
+  isBlocked: boolean;
+  createdAt: Date;
+};
 
 export const usersApi = api.injectEndpoints({
   endpoints: (builder) => ({
