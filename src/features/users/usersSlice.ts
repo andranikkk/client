@@ -1,17 +1,16 @@
-// import { User } from "@prisma/client";
 import { createSlice } from "@reduxjs/toolkit";
 
 import { usersApi } from "../../app/services/users";
 import { RootState } from "../../app/store";
-import { User } from "@prisma/client";
-// type User = {
-//   id: string;
-//   email: string;
-//   password: string;
-//   name: string;
-//   isBlocked: boolean;
-//   createdAt: Date;
-// };
+// import { User } from "@prisma/client";
+type User = {
+  id: string;
+  email: string;
+  password: string;
+  name: string;
+  isBlocked: boolean;
+  createdAt: Date;
+};
 
 interface InitialState {
   users: User[] | null;
